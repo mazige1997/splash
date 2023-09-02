@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-RUN apt update \
-  && apt install git wget \
+RUN apt update -y \
+  && apt install git wget -y \
   && cd /usr/bin \
   && wget https://github.com/Ericwyn/miniServer/releases/download/v2.0/miniServer \
   && cd /etc \
